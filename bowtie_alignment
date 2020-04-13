@@ -1,11 +1,11 @@
 #!/bin/bash -l
 
-#PBS -N b2all
+#PBS -N <jobname>
 #PBS -q darwin
 #PBS -l nodes=1:ppn=10,naccesspolicy=singleuser
 #PBS -l walltime=300:00:00
 #PBS -m abe
-#PBS -M cschraid@purdue.edu
+#PBS -M <email>
 
 #module version based on most up to date as of 25 Feb 2020
 module --force purge
