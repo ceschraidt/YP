@@ -8,7 +8,7 @@
 #SBATCH -n 20
 #SBATCH -t 300:00:00
 #SBATCH -exclusive
-#SBATCH --mail-user= 
+#SBATCH --mail-user= <email>
 #SBATCH --mail-type=begin
 #SBATCH --mail-type=end
 
