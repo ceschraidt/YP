@@ -17,5 +17,10 @@ cd $SLURM_SUBMIT_DIR
 module load stacks/2.5
 
 #single pop preliminary run for vcf output. our dataset was too large and memory hungry to run populations as intended 
-populations -P ./gstacks  --vcf --min-samples-per-pop 0.30 -t 1 -O ./populations --verbose
+#adapted from Amanda's populations jobfile
+populations -P ./gstacks 
+	--vcf \
+	-r 0.30 \ 
+	--write-single-snp \
+	-O populations \
 
