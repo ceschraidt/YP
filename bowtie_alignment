@@ -34,7 +34,7 @@ for i in $samples; do
 
         echo $samp >> $al_out/bowtie.log
 
-        ## I use --very-sensitive because divergent spp
+        ## conservatively, use --very-sensitive 
         bowtie2 --very-sensitive -p 32 -x $bowtie_db \
         -1 $proc/${samp}.1.fq.gz -2 $proc/${samp}.2.fq.gz \
         -S $al_out/${samp}.sam 2>> $al_out/bowtie.log
